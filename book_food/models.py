@@ -10,17 +10,16 @@ class Reservation(models.Model):
     time = models.TimeField()
     party_size = models.PositiveIntegerField()
     num_tables = models.PositiveIntegerField(default=1)
+    canceled = models.BooleanField(default=False)
 
     created_at = models.DateTimeField(default=timezone.now)
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return f"Reservation for {self.party_size} guests on {self.date} at {self.time}"
+    
 
+    def cancel_reservation(self):
+        self.canceled = True
+        self.save()
 
-class Table(models.Model):
-    reservation = models.ForeignKey(Reservation, on_delete=models.CASCADE)
-    table_number = models.PositiveIntegerField()
-
-    def __str__(self):
-        return f"Table {self.table_number} for Reservation ID {self.reservation.Id}"
