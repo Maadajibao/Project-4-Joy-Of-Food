@@ -16,3 +16,11 @@ class Reservation(models.Model):
 
     def __str__(self):
         return f"Reservation for {self.party_size} guests on {self.date} at {self.time}"
+
+
+class Table(models.Model):
+    reservation = models.ForeignKey(Reservation, on_delete=models.CASCADE)
+    table_number = models.PositiveIntegerField()
+
+    def __str__(self):
+        return f"Table {self.table_number} for Reservation ID {self.reservation.Id}"
