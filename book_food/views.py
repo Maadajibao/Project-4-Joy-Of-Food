@@ -1,7 +1,10 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.views import generic
+from .models import Reservation
 
 # Create your views here.
 
-def index(request):
-    return HttpResponse("Can I Take Your Order?")
+class ReservationList(generic.ListView):
+    model = Reservation
+    template_name = "index.html"
+    paginate_by = 6
