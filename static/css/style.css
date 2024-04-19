@@ -1,0 +1,72 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Calloutbox*/
+
+.callout-container {
+    height: 100vh;
+
+    background: url('../images/flatlay-iron-skillet-with-meat-and-other-food.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviews-container {}
+
+.menu-container {}
+
+/*Block dividers*/
+
+.block-divider {
+    width: 75px;
+    height: 5px;
+    border: 0;
+    background-color: beige;
+}
+
+/*Jumbotron*/
+
+.jumbotron {
+    background-color: black;
+}
+
+.jumbotron-header {
+    color: white;
+    font: bold;
+    margin-bottom: 20px;
+
+}
+
+.lead {
+    color: white;
+    margin: 25px 0;
+}
+
+/*Buttons*/
+
+.btn--cta {
+    font-weight: bold;
+    border-radius: 23px;
+    width: 160px;
+}
+
+.btn--red {
+    color: white;
+    background-color: #f05f40;
+    border-color: #f05f40;
+}
+
+.btn--red:hover,
+.btn--red:active,
+.btn--red:focus,
+.btn--red:active:focus {
+    background-color: #df4929;
+    border-color: #df4929;
+}
