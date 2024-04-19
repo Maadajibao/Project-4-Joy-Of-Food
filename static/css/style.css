@@ -1,11 +1,13 @@
 body {
     font-family: 'Roboto', sans-serif;
+    
 }
 
 /*Calloutbox*/
 
 .callout-container {
     height: 100vh;
+    
 
     background: url('../images/flatlay-iron-skillet-with-meat-and-other-food.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -69,4 +71,28 @@ body {
 .btn--red:active:focus {
     background-color: #df4929;
     border-color: #df4929;
+}
+
+/*Navbar*/
+
+.navbar {
+     background-color: black;
+     width: auto;
+     color: white;
+
+
+}
+
+/*Bootstrap row*/
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+/*Bootstrap container-fluid*/
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
 }
