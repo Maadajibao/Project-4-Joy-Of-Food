@@ -78,10 +78,10 @@ body {
 .navbar {
      background-color: black;
      width: auto;
-     color: white;
-
+     
 
 }
+
 
 /*Bootstrap row*/
 
@@ -95,4 +95,34 @@ body {
 .container-fluid {
     padding-right: 0;
     padding-left: 0;
+}
+
+/*Menu*/
+
+.menu-container {
+
+}
+
+.food {}
+
+.drinks {}
+
+/*Table*/
+
+.food-table {
+    margin-top: 20px;
+}
+.drinks-table {
+    margin-top: 20px;
+}
+
+.td-tittle {
+    width: 74%;
+    padding: 14px 0 10px 10px;
+    text-align: left;
+}
+
+.td-price {
+    width: 1%;
+    padding: 0 10px 0 0;
 }
