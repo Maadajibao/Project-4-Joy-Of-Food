@@ -64,7 +64,7 @@
     <!-- /Footer -->
 
     <!--Modal for from-->
-    <div class="modal" tabindex="-1" id="bookModal">
+    <div class="modal modal-overlay" tabindex="-1" id="bookModal">
         <div class="modal-dialog">
           <div class="modal-content">
 
@@ -75,25 +75,27 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
+            
+            <!-- Modal Body-->
             <div class="modal-body">
               <h2>Reservation</h2>
               <form action="/make_reservation" method="post" class="modal-form">
 
                 <!-- Date Input -->
                 <label for="date">Date:</label>
-                <input type="date" id="date" name="date" required><br><br>
+                <input type="date" id="date" name="date" required class="form-control"><br><br>
 
                  <!-- Time Input -->
                 <label for="time">Time:</label>
-                <input type="time" id="time" name="time" required><br><br>
+                <input type="time" id="time" name="time" required class="form-control"><br><br>
 
                  <!-- Party Size Input -->
                 <label for="party_size">Party Size::</label>
-                <input type="number" id="party_size"  name="party_size" min="1" required><br><br>
+                <input type="number" id="party_size"  name="party_size" min="1" required class="form-control"><br><br>
 
                  <!-- Number of Tables Input -->
                 <label for="num_tables">Number of Tables:</label>
-                <input type="number" id="num_tables" name="num_tables"  min="1" value="1" required><br><br>
+                <input type="number" id="num_tables" name="num_tables"  min="1" value="1" required class="form-control"><br><br>
 
                 <input type="submit" value="Submit">
 
