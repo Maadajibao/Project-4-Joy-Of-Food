@@ -99,6 +99,10 @@ body {
 
 /*Menu*/
 
+.menu {
+    background-color: darkcyan;
+}
+
 .menu-container {
 
 }
@@ -126,3 +130,6 @@ body {
     width: 1%;
     padding: 0 10px 0 0;
 }
+
+
+/*Modal*/

@@ -67,6 +67,8 @@
     <div class="modal" tabindex="-1" id="bookModal">
         <div class="modal-dialog">
           <div class="modal-content">
+
+            <!-- Modal Header -->
             <div class="modal-header">
               <h5 class="modal-title">Reservation</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -75,16 +77,21 @@
             </div>
             <div class="modal-body">
               <h2>Reservation</h2>
-              <form action="/make_reservation" method="post">
+              <form action="/make_reservation" method="post" class="modal-form">
+
+                <!-- Date Input -->
                 <label for="date">Date:</label>
                 <input type="date" id="date" name="date" required><br><br>
 
+                 <!-- Time Input -->
                 <label for="time">Time:</label>
                 <input type="time" id="time" name="time" required><br><br>
 
+                 <!-- Party Size Input -->
                 <label for="party_size">Party Size::</label>
                 <input type="number" id="party_size"  name="party_size" min="1" required><br><br>
 
+                 <!-- Number of Tables Input -->
                 <label for="num_tables">Number of Tables:</label>
                 <input type="number" id="num_tables" name="num_tables"  min="1" value="1" required><br><br>
 
