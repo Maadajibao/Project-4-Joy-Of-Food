@@ -79,7 +79,10 @@
             <!-- Modal Body-->
             <div class="modal-body">
               <h2>Reservation</h2>
-              <form action="/make_reservation" method="post" class="modal-form">
+              <form action="{% url 'make_reservation' %}" method="post" class="modal-form">
+
+                <!--Csrf token-->
+                {% csrf_token %}
 
                 <!-- Date Input -->
                 <label for="date">Date:</label>
