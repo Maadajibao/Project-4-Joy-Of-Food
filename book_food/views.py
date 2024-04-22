@@ -41,7 +41,14 @@ def make_reservation(request):
     return render(request, 'base.html')
 
 def reservation_success(request):
-
     return render(request, 'reservation_success.html')
+
+
+
+class BookingsListView(generic.ListView):
+    model = Reservation
+    template_name = 'bookings.html'
+    context_object_name = 'bookings'
+
     
     

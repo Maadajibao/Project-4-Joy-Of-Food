@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- index.html content starts here -->
+
+<!--Main-->
+
+<div class="container">
+    <h1>My Bookings</h1>
+    <ul>
+        {% for booking in bookings%}
+            <li> {{ booking.date }} at {{ booking.time }} - Party Size : {{ booking.party_size }}</li>
+        {% endfor %}
+    </ul>
+
+
+</div>
+
+<!--/Main-->
+
+<!-- index.html content ends here -->
+{% endblock %}
