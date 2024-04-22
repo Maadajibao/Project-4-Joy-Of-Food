@@ -3,6 +3,7 @@ from django.views import generic
 from .models import Reservation
 from django.contrib.auth.decorators import login_required
 
+
 # Create your views here.
 
 class ReservationList(generic.ListView):
@@ -25,7 +26,6 @@ def make_reservation(request):
         num_tables = request.POST['num_tables']
 
         # Create a new reservation and save it to database
-
         reservation = Reservation.objects.create(
             user=user,
             date=date, 
@@ -41,6 +41,7 @@ def make_reservation(request):
     return render(request, 'base.html')
 
 def reservation_success(request):
+
     return render(request, 'reservation_success.html')
     
     
