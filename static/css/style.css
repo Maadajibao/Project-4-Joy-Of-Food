@@ -172,6 +172,35 @@ body {
 
 }
 
+/* Footer */
+
+.social-networks {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin-top: auto;
+
+}
+
+/* Containers*/
+
+.my_booking-container {
+    padding: 20px;
+}
+
+.main-container {
+    height: 100vh;
+}
+
+
+
+
 /* Messages */
 
 .messages {
@@ -199,15 +228,19 @@ body {
 @media (max-width: 768px) {
 
     .td-booking-tittle-l {
-        padding-right: 30px;
+        padding-right: 20px;
         
     }
     
     .td-booking-tittle-m {
-        padding-right: 150px;    
+        padding-right: 50px;    
     }
     
     .hide-year {
+        display: none;
+    }
+
+    .number-of-tables {
         display: none;
     }
 }

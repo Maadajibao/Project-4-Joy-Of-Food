@@ -5,15 +5,15 @@
 
 <!--Main-->
 
-<div class="container">
+<div class="container my_booking-container">
     <h1>My Bookings</h1>
-    <div class="booking-container">
+    <div class="main-container">
         <table>
             <tr>
                 <th class="td-booking-tittle-l">Date:</th>
                 <th class="td-booking-tittle-m">Time:</th>
                 <th class="td-booking-tittle-l">Party Size:</th>
-                <th>Number of Tables:</th>
+                <th class="number-of-tables">Number of Tables:</th>
             </tr>
         {% for booking in bookings%}
             <tr> 
@@ -26,7 +26,7 @@
                 <td>
                     {{ booking.party_size }}
                 </td>
-                <td class="td-booking-tittle">
+                <td class="td-booking-tittle number-of-tables">
                     {{ booking.num_tables }}
                 </td>                 
                 <td>

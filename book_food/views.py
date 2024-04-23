@@ -13,7 +13,7 @@ class ReservationList(generic.ListView):
     paginate_by = 6
 
 
-
+# Make reservation function
 @login_required
 def make_reservation(request):
     if request.method == 'POST':
@@ -47,16 +47,20 @@ def make_reservation(request):
     
     return render(request, 'base.html')
 
+# Render successfull reservation booking
 def reservation_success(request):
     return render(request, 'reservation_success.html')
 
 
-
+# Displaying bookings
 class BookingsListView(generic.ListView):
     model = Reservation
     template_name = 'bookings.html'
     context_object_name = 'bookings'
 
+
+
+# Cancal reservation function
 def cancel_reservation(request, reservation_id):
     reservation = get_object_or_404(Reservation, pk=reservation_id)
     if request.method == 'POST':
@@ -66,4 +70,7 @@ def cancel_reservation(request, reservation_id):
         return render(request,'cancel_reservation.html',) 
     return render(request, 'cancel_reservation.html', {'reservation': reservation})
     
-    
+
+# Render about us page 
+def about(request):
+    return render(request, 'about.html')

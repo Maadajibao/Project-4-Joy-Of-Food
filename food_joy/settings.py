@@ -28,7 +28,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = 'django-insecure-&6t%t)t#r7c=+1a6&uvvv&5i)4c&-ydm*knfyd@j45^!s(*fl+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['8000-maadajibao-project4joyo-el6liml2nnr.ws-eu110.gitpod.io',
                 '.herokuapp.com']
@@ -48,11 +48,16 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'book_food',
+    'crispy_forms',
+    'crispy_bootstrap5',
 ]
 
 SITE_ID = 1
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
