@@ -138,12 +138,12 @@ body {
 }
 
 .td-booking-tittle-l {
-    padding-right: 50px;
+    padding-right: 100px;
     
 }
 
 .td-booking-tittle-m {
-    padding-right: 200px;    
+    padding-right: 500px;    
 }
 /*Modal*/
 
@@ -177,4 +177,37 @@ body {
 .messages {
     margin-top: 50px;
     font-size: 120%;
+}
+
+@media (max-width: 600px) {
+
+    .td-booking-tittle-l {
+        padding-right: 20px;
+        
+    }
+    
+    .td-booking-tittle-m {
+        padding-right: 50px;    
+    }
+    
+    .hide-year {
+        display: none;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .td-booking-tittle-l {
+        padding-right: 30px;
+        
+    }
+    
+    .td-booking-tittle-m {
+        padding-right: 150px;    
+    }
+    
+    .hide-year {
+        display: none;
+    }
 }
