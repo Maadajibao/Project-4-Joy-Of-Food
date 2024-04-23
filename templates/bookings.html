@@ -7,11 +7,36 @@
 
 <div class="container">
     <h1>My Bookings</h1>
-    <ul>
+    <div class="booking-container">
+        <table>
+            <tr>
+                <th class="td-booking-tittle-l">Date:</th>
+                <th class="td-booking-tittle-m">Time:</th>
+                <th class="td-booking-tittle-l">Party Size:</th>
+                <th>Number of Tables:</th>
+            </tr>
         {% for booking in bookings%}
-            <li> {{ booking.date }} at {{ booking.time }} - Party Size : {{ booking.party_size }}</li>
+            <tr> 
+                <td>
+                    {{ booking.date }}
+                </td>
+                <td>
+                    {{ booking.time }}
+                </td>
+                <td>
+                    {{ booking.party_size }}
+                </td>
+                <td class="td-booking-tittle">
+                    {{ booking.num_tables }}
+                </td>                 
+                
+            </tr>
         {% endfor %}
-    </ul>
+
+        </table>
+  
+
+    </div>
 
 
 </div>

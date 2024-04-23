@@ -5,7 +5,6 @@ from django.contrib.auth.decorators import login_required
 from django.utils import timezone
 from django.contrib import messages
 
-
 # Create your views here.
 
 class ReservationList(generic.ListView):
@@ -31,7 +30,7 @@ def make_reservation(request):
         existing_reservations = Reservation.objects.filter(date=date, time=time)
         if existing_reservations.exists():
             messages.error(request, "Sorry, there is already a reservation for this date and time.")
-            return redirect('home')
+            return render(request, 'messages.html')
 
         # Create a new reservation and save it to database
         reservation = Reservation.objects.create(
@@ -57,6 +56,7 @@ class BookingsListView(generic.ListView):
     model = Reservation
     template_name = 'bookings.html'
     context_object_name = 'bookings'
+
 
     
     

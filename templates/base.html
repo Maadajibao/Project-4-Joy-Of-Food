@@ -98,8 +98,9 @@
             <!-- Modal Body-->
             <div class="modal-body">
               <h2>Reservation</h2>
+             
               <form action="{% url 'make_reservation' %}" method="post" class="modal-form">
-
+                
                 <!--Csrf token-->
                 {% csrf_token %}
 
@@ -128,6 +129,7 @@
         </div>
       </div>
     <!-- /Modal -->
+
 
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/90083b88cf.js" crossorigin="anonymous"></script>

@@ -111,7 +111,7 @@ body {
 
 .drinks {}
 
-/*Table*/
+/*Table menu*/
 
 .food-table {
     margin-top: 20px;
@@ -131,7 +131,20 @@ body {
     padding: 0 10px 0 0;
 }
 
+/* Table booking*/
 
+.td-booking-tittle {
+    
+}
+
+.td-booking-tittle-l {
+    padding-right: 50px;
+    
+}
+
+.td-booking-tittle-m {
+    padding-right: 200px;    
+}
 /*Modal*/
 
 .modal-overlay {
@@ -157,4 +170,11 @@ body {
     max-width: 500px;
     width: 90%;
 
+}
+
+/* Messages */
+
+.messages {
+    margin-top: 50px;
+    font-size: 120%;
 }
