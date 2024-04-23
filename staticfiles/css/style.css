@@ -1,0 +1,246 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+/*Calloutbox*/
+
+.callout-container {
+    height: 100vh;
+    
+
+    background: url('../images/flatlay-iron-skillet-with-meat-and-other-food.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviews-container {}
+
+.menu-container {}
+
+/*Block dividers*/
+
+.block-divider {
+    width: 75px;
+    height: 5px;
+    border: 0;
+    background-color: beige;
+}
+
+/*Jumbotron*/
+
+.jumbotron {
+    background-color: black;
+}
+
+.jumbotron-header {
+    color: white;
+    font: bold;
+    margin-bottom: 20px;
+
+}
+
+.lead {
+    color: white;
+    margin: 25px 0;
+}
+
+/*Buttons*/
+
+.btn--cta {
+    font-weight: bold;
+    border-radius: 23px;
+    width: 160px;
+}
+
+.btn--red {
+    color: white;
+    background-color: #f05f40;
+    border-color: #f05f40;
+}
+
+.btn--red:hover,
+.btn--red:active,
+.btn--red:focus,
+.btn--red:active:focus {
+    background-color: #df4929;
+    border-color: #df4929;
+}
+
+/*Navbar*/
+
+.navbar {
+     background-color: black;
+     width: auto;
+     
+
+}
+
+
+/*Bootstrap row*/
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+/*Bootstrap container-fluid*/
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/*Menu*/
+
+.menu {
+    background-color: darkcyan;
+}
+
+.menu-container {
+
+}
+
+.food {}
+
+.drinks {}
+
+/*Table menu*/
+
+.food-table {
+    margin-top: 20px;
+}
+.drinks-table {
+    margin-top: 20px;
+}
+
+.td-tittle {
+    width: 74%;
+    padding: 14px 0 10px 10px;
+    text-align: left;
+}
+
+.td-price {
+    width: 1%;
+    padding: 0 10px 0 0;
+}
+
+/* Table booking*/
+
+.td-booking-tittle {
+    
+}
+
+.td-booking-tittle-l {
+    padding-right: 100px;
+    
+}
+
+.td-booking-tittle-m {
+    padding-right: 500px;    
+}
+/*Modal*/
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99999;
+}
+
+.modal-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 10000;
+    max-width: 500px;
+    width: 90%;
+
+}
+
+/* Footer */
+
+.social-networks {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin-top: auto;
+
+}
+
+/* Containers*/
+
+.my_booking-container {
+    padding: 20px;
+}
+
+.main-container {
+    height: 100vh;
+}
+
+
+
+
+/* Messages */
+
+.messages {
+    margin-top: 50px;
+    font-size: 120%;
+}
+
+@media (max-width: 600px) {
+
+    .td-booking-tittle-l {
+        padding-right: 20px;
+        
+    }
+    
+    .td-booking-tittle-m {
+        padding-right: 50px;    
+    }
+    
+    .hide-year {
+        display: none;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .td-booking-tittle-l {
+        padding-right: 20px;
+        
+    }
+    
+    .td-booking-tittle-m {
+        padding-right: 50px;    
+    }
+    
+    .hide-year {
+        display: none;
+    }
+
+    .number-of-tables {
+        display: none;
+    }
+}
