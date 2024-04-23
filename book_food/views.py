@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect
 from django.views import generic
 from .models import Reservation
 from django.contrib.auth.decorators import login_required
+from django.utils import timezone
+from django.contrib import messages
 
 
 # Create your views here.
@@ -24,6 +26,12 @@ def make_reservation(request):
         time = request.POST['time']
         party_size = request.POST['party_size']
         num_tables = request.POST['num_tables']
+
+        # Check for double bookings
+        existing_reservations = Reservation.objects.filter(date=date, time=time)
+        if existing_reservations.exists():
+            messages.error(request, "Sorry, there is already a reservation for this date and time.")
+            return redirect('home')
 
         # Create a new reservation and save it to database
         reservation = Reservation.objects.create(
