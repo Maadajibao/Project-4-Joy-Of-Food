@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic
 from .models import Reservation
 from django.contrib.auth.decorators import login_required
@@ -57,6 +57,13 @@ class BookingsListView(generic.ListView):
     template_name = 'bookings.html'
     context_object_name = 'bookings'
 
-
+def cancel_reservation(request, reservation_id):
+    reservation = get_object_or_404(Reservation, pk=reservation_id)
+    if request.method == 'POST':
+        #Perform cancellation
+        reservation.delete()
+        messages.success(request, "Reservation cancelled successfully.")
+        return render(request,'cancel_reservation.html',) 
+    return render(request, 'cancel_reservation.html', {'reservation': reservation})
     
     

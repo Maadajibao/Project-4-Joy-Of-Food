@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if messages %}
+
+<div class="container messages-container">
+    <div class="messages">
+        <p>
+            You have cancelled your reservation.
+        </p>
+        
+        <p> If you wish to make another book</p>
+        <button class="btn btn-lg btn--cta btn--red" data-toggle="modal" data-target="#bookModal">Book</button>
+        </form>
+
+    </div>
+</div>    
+{% endif %}
+
+{% endblock %}

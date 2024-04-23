@@ -23,3 +23,9 @@ class Reservation(models.Model):
         self.canceled = True
         self.save()
 
+class Review(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    text = models.TextField()
+    rating = models.IntegerField()
+    created_at = models.DateTimeField(auto_now_add=True)
+

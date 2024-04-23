@@ -29,7 +29,12 @@
                 <td class="td-booking-tittle">
                     {{ booking.num_tables }}
                 </td>                 
-                
+                <td>
+                    <form method="post" action="{% url 'cancel_reservation' booking.id %}">
+                        {% csrf_token %}
+                        <button type="submit">Cancel</button>
+                    </form>
+                </td>
             </tr>
         {% endfor %}
 
