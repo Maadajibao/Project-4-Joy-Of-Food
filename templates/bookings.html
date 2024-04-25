@@ -7,7 +7,7 @@
 
 <div class="container my_booking-container">
     <h1>My Bookings</h1>
-    <div class="main-container">
+    <div class="main-container booking-table-container">
         <table>
             <tr>
                 <th class="td-booking-tittle-l">Date:</th>
@@ -15,6 +15,7 @@
                 <th class="td-booking-tittle-l">Party Size:</th>
                 <th class="number-of-tables">Number of Tables:</th>
             </tr>
+            <!--Generats bookings-->
         {% for booking in bookings%}
             <tr> 
                 <td>
@@ -32,7 +33,7 @@
                 <td>
                     <form method="post" action="{% url 'cancel_reservation' booking.id %}">
                         {% csrf_token %}
-                        <button type="submit">Cancel</button>
+                        <button type="submit" class="btn--red1">Cancel</button>
                     </form>
                 </td>
             </tr>
