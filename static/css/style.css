@@ -20,9 +20,6 @@ body {
     justify-content: center;
 }
 
-.reviews-container {}
-
-.menu-container {}
 
 /*Block dividers*/
 
@@ -213,7 +210,12 @@ body {
     justify-content: space-evenly;
     list-style-type: none;
     margin-top: auto;
+    
 
+}
+
+.social-networks a {
+    color: #df4929;
 }
 
 /* Containers*/
@@ -236,6 +238,11 @@ body {
 
 .booking-table-container {
     margin-top: 20px;
+}
+
+.image-container {
+
+
 }
 
 
