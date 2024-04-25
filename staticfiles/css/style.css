@@ -20,9 +20,6 @@ body {
     justify-content: center;
 }
 
-.reviews-container {}
-
-.menu-container {}
 
 /*Block dividers*/
 
@@ -73,6 +70,26 @@ body {
     border-color: #df4929;
 }
 
+.btn--cta1 {
+    font-weight: bold;
+    border-radius: 23px;
+    width: 120px;
+}
+
+.btn--red1 {
+    color: white;
+    background-color: #f05f40;
+    border-color: #f06040c9;
+}
+
+.btn--red1:hover,
+.btn--red1:active,
+.btn--red1:focus,
+.btn--red1:active:focus {
+    background-color: #df4929;
+    border-color: #df4929;
+}
+
 /*Navbar*/
 
 .navbar {
@@ -107,9 +124,13 @@ body {
 
 }
 
-.food {}
+.food {
+    padding-right: 20px;
+}
 
-.drinks {}
+.drinks {
+    padding-right: 20px;
+}
 
 /*Table menu*/
 
@@ -172,6 +193,10 @@ body {
 
 }
 
+.white-space {
+    height: 30px;
+}
+
 /* Footer */
 
 .social-networks {
@@ -185,7 +210,12 @@ body {
     justify-content: space-evenly;
     list-style-type: none;
     margin-top: auto;
+    
 
+}
+
+.social-networks a {
+    color: #df4929;
 }
 
 /* Containers*/
@@ -196,6 +226,22 @@ body {
 
 .main-container {
     height: 100vh;
+}
+
+/*Log in and sigh up containers*/
+
+.log_sign-container {
+    height: 100vh;
+    margin-top: 20px;
+
+}
+
+.booking-table-container {
+    margin-top: 20px;
+}
+
+.bmessges-container {
+    margin: 20px 0;
 }
 
 
