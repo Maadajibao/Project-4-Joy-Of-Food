@@ -6,11 +6,11 @@
 
 <div class="container messages-container">
     <div class="messages main-container">
-        {% for message in messages %}
-            <p>{{ message }}</p>
+       
+            <p>Unfortunately this date and time is already book.</p>
             <p>Please, choose a diffrent date or time.</p>
             <button class="btn btn-lg btn--cta btn--red" data-toggle="modal" data-target="#bookModal">Book</button>
-        {% endfor %}
+        
     </div>
 </div>    
 {% endif %}
