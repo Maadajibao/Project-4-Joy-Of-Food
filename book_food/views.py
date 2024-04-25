@@ -74,3 +74,6 @@ def cancel_reservation(request, reservation_id):
 # Render about us page 
 def about(request):
     return render(request, 'about.html')
+
+def booking_view(request):
+    return render(request, 'base.html', {'user': request.user})

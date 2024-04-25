@@ -38,7 +38,9 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item mr-2 {% if request.path == home_url %}active{% endif %}"><a href="/" class="nav-link">Home</a></li>
+                    {% if user.is_authenticated %}
                     <li class="nav-item mr-2"><a href="{% url 'bookings' %}" class="nav-link">Bookings</a></li>
+                    {% endif %}
                     <li class="nav-item mr-2"><a href="/about" class="nav-link">About us</a></li>
 
                     {% if user.is_authenticated %}
