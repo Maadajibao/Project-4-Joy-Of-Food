@@ -4,7 +4,7 @@ This is a Python and Django application for a newly started restaurang, here you
 
 When a user visits the website users can register an account so that they can keep track of their bookings.
 
-[Here is the live version](https://sink-a-ship-283abb4062a9.herokuapp.com/)
+[Here is the live version](https://joy-of-food-f30aafe0b05b.herokuapp.com/)
 
 ![Website in diffrent browsers](assets/images/devicepic.JPG)
 
