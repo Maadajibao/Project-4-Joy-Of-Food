@@ -149,6 +149,10 @@ The following is a list of the various technologies employed to build this proje
 
 ## Testing 
 
+Admin login: 
+* Username: food
+* Password: lovetoeat
+
 I have manually tested this project by doing the following:
 
 * I tested playing this website in different browsers; Chrome, Firefox, Safari.
